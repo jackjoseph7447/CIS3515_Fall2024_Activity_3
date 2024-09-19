@@ -27,6 +27,7 @@ class TextSizeAdapter(_context : Context, _array : Array<Int>) : BaseAdapter() {
         val textView : TextView
 
         textView = TextView(context)
+        textView.text = array[position].toString()
         textView.textSize = array[position].toFloat()
         textView.setPadding(5,10,0,10)
 

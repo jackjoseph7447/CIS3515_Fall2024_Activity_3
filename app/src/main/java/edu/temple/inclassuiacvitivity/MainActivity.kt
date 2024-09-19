@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             onItemSelectedListener = object : OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                     parent?.run {
-                        displayTextView.textSize = parent.getItemAtPosition(position) as Float
+                        displayTextView.textSize = parent.getItemAtPosition(position).toString().toFloat()
                     }
                 }
 
