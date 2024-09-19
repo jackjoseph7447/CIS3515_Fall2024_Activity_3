@@ -20,7 +20,7 @@ class TextSizeAdapter(_context : Context, _array : Array<Int>) : BaseAdapter() {
     }
 
     override fun getItemId(position: Int): Long {
-        //return position.toLong()
+        return position.toLong()
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
