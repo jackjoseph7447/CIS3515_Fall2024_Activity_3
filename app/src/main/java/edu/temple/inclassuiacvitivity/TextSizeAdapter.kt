@@ -16,7 +16,7 @@ class TextSizeAdapter(_context : Context, _array : Array<Int>) : BaseAdapter() {
     }
 
     override fun getItem(position: Int): Any {
-        //return array[position]
+        return array[position]
     }
 
     override fun getItemId(position: Int): Long {
